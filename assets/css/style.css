@@ -1,0 +1,135 @@
+/* Common Class */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif, Courier, monospace;
+    font-weight: normal;
+}
+
+h4 { font-size:22px; font-weight: bold; color:#092B6C;  }
+
+
+
+
+.row { margin:0 auto ; width: 100%; max-width: 840px; }
+.col-1 { width:100%; }
+.col-2 { width:50%; }
+.col-3 { width:30%; }
+
+.flexcontant { display:flex; align-items:center; justify-content:space-between ;}
+
+.py50 { padding-top:50px; padding-bottom:50px; }
+.py20 { padding-top:20px; padding-bottom:20px; }
+
+.tec { text-align: center; }
+.btn {padding:5px; text-align: center;  font-weight: 600; border:0; border-radius:3px; }
+
+.bg-primary { color: #FFFFFF; background:#022D7C; }
+
+.btn-primary {  background:#00FFFE; }
+.btn-primary:hover { background:#01d5d5;  } 
+
+.btn-secondry { border:1px solid #00FFFE;  background:none; }
+.btn-secondry:hover { border:1px solid #01d5d5;} 
+
+
+
+
+/* Header Class */
+header { color:#FFFFFF;  background:#022D7C; }
+header h1 { padding:8px 0; font-size: 21px; font-weight: 600; }
+header h1 span { font-size:12px; }
+.call {  font-size: 21px; font-weight: 400; vertical-align:text-top; }
+.call svg { vertical-align: middle;}
+.call span { color:#22CBE7;}
+
+
+/* Home Page Header start */
+
+.heroBanner { background:url("../img/hero-banner.jpg") no-repeat center center; background-size:cover ; }
+
+.heroContant { color: #FFFFFF; font-size:31px ; }
+.heroContant b {font-size:50px ; font-weight: bolder; }
+.heroContant span { font-size:39px ;} 
+
+.heroFormBox {  text-align: center; padding:10px; border-radius:5px;  background:#022D7C; }
+.heroFormBox h3 { margin-bottom:15px ;  color: #FFFFFF; }
+.heroFormBox .col-2, .heroFormBox .col-1 {padding:1%; }
+.heroFormBox input { width:98%; margin:5px 0; padding:5px 0; text-align: center; color: #A3A4A6; border:0; }
+.heroFormBox .fullInput { width:99%; margin:5px; } 
+
+.heroFormBox input[type="textarea"] {  margin:5px; padding:5px; }
+
+
+/* Services Box Start */
+.services .row div h4 { padding-bottom:5px;}
+.services .row div img { max-width: 100%;  }
+.services .row div p { font-size:15px ; color:#092B6C; }
+
+/* About Us Section */
+
+.aboutus h4 { color: #FFFFFF; }
+.aboutus .btn { color: #FFFFFF; border:1px solid #FFFFFF; margin-top:20px; width:40%;}
+.aboutus .btn:hover { color: #022D7C; border:1px solid #FFFFFF; background: #FFFFFF;}
+
+/* Extra Services Section Start */
+
+.extservice { padding-bottom:50px; }
+.extservice .row h4 { color:#000 ; }
+.extservice .row img { max-width:100% ; }
+.extservice .row .imgContant { padding-left:50px ; }
+.extservice .row .imgContant2 { padding-right:50px ;  }
+
+.footer { font-size:13px ; }
+
+
+/* Responsive Start */
+@media (max-width: 1199.98px) {
+
+    .py50 { padding-top:30px; padding-bottom:30px; }
+
+    .row { margin:0 10%; width: 100%; }
+    
+ }
+
+ @media (max-width: 991.98px) { 
+
+    .row { margin:0 1%; width: 98%; }
+    .py50 { padding-top:2%; padding-bottom:2%; }
+
+    .flexcontant .heroFormBox { flex:2; }
+    
+    .heroContant { font-size:2.0rem; flex:1 !important; }
+    .heroContant b {font-size:2.0rem; }
+    .heroContant span { font-size:2.0rem; } 
+    
+    .flexcontant .heroFormBox { flex:2; max-width:400px ; }
+    .flexcontant .heroFormBox input { width:100%; margin:0;} 
+    .flexcontant .heroFormBox .formRow  { padding:1%  0; }
+    .flexcontant .heroFormBox .formRow .msgBox { width:100%; height:50px ;  margin:0; }
+  }
+
+
+  @media (max-width: 767.98px) { 
+
+    .flexcontant { display:block; text-align: center; }
+    .col-1, .col-2, .col-3 { width:100%; }
+
+    header { padding:10px 0; }
+    .heroBanner .row { padding-bottom: 10px;}
+    .heroBanner { margin-bottom:20px ; }
+    .heroContant { padding-bottom:10px;}
+    .flexcontant .heroFormBox .formRow  { padding:0; }
+
+    .flexcontant .heroFormBox input { margin-bottom:10px;} 
+    
+    .services .col-3 { margin-bottom:20px; }
+    
+    .extservice .flexcontant { display:flex; margin-bottom:20px ; flex-direction: column; text-align: center;  }
+    .extservice .flexcontant .col-2 { padding:0 0 20px 0; display: block; overflow: hidden; }
+    
+
+
+  }
